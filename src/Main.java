@@ -18,7 +18,6 @@ public class Main {
     }
 
     private static void inicializarUsuariosPredeterminados() {
-        // Agregamos los usuarios predeterminados
         usuarios.add(new Usuario("juan diego", "44223366", "administrador"));
         usuarios.add(new Usuario("mahicol", "33333333", "vendedor"));
         usuarios.add(new Usuario("christian", "87654321", "gerente"));
@@ -182,9 +181,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Ingrese ID del producto: ");
         int idProducto = scanner.nextInt();
-        scanner.nextLine(); // Limpiar el buffer del scanner
-
-        // Verificar si el ID ya existe
+        scanner.nextLine();
         if (buscarProductoPorId(idProducto) != null) {
             System.out.println("El ID del producto ya existe. Ingrese otro ID.");
             return;

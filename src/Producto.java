@@ -27,7 +27,6 @@ public class Producto {
     public int getCantidadEnStock() { return cantidadEnStock; }
     public void setCantidadEnStock(int cantidadEnStock) { this.cantidadEnStock = cantidadEnStock; }
 
-    // Método para actualizar la cantidad en stock después de una venta
     public void actualizarCantidadEnStock(int cantidad) {
         this.cantidadEnStock -= cantidad;
     }

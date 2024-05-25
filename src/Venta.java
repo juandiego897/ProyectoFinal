@@ -43,7 +43,7 @@ public class Venta {
         calcularTotalVenta();
     }
     public void calcularTotalVenta() {
-        totalVenta = 0.0; // Reiniciamos el total
+        totalVenta = 0.0;
         for (int i = 0; i < productosVendidos.size(); i++) {
             Producto producto = productosVendidos.get(i);
             int cantidad = cantidadesVendidas.get(i);
